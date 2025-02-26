@@ -8,7 +8,7 @@ export const ProductCard = ({ img, name, otziv, price }) => {
         <img src={img} alt="" className="w-full" />
       </div>
       <div className="mt-[10px] text-start">
-        <h3 className=" font-bold text-[12px]">{name}</h3>
+        <h3 className=" font-bold text-[12px] xl:text-[17px]">{name}</h3>
         <div className="mt-[4px] flex gap-[11px]">
           <img src={Reating} alt="" />
           <p>{otziv}</p>

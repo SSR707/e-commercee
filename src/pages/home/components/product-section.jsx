@@ -1,11 +1,15 @@
 import { ProductCard } from "./product-card";
 import { SliderCard } from "./sliderCard";
 
-export const ProductSection = ({ title , isChek}) => {
+export const ProductSection = ({ title, isChek }) => {
   return (
     <div className="container">
-      <div className={`xl: text-center  pb-[40px]  xl:pb-[64px] ${isChek ? 'border-b-1 border-gray' : ''}`}>
-        <h2 className="font-bold text-[32px] text-center text-[#000] xl:text-[48px]">
+      <div
+        className={`xl: text-center  pb-[40px]  xl:pb-[64px] ${
+          isChek ? "border-b-1 border-gray" : ""
+        }`}
+      >
+        <h2 className="secondFont font-bold text-[32px] text-center text-[#000] xl:text-[48px]">
           {title}
         </h2>
         <div className="mt-[32px]">

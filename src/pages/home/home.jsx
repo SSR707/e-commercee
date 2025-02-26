@@ -1,5 +1,6 @@
 import { Brands } from "./components/brads";
 import { Browse } from "./components/browse";
+import { Customers } from "./components/custumers";
 import { Hero } from "./components/hero";
 import { ProductSection } from "./components/product-section";
 
@@ -18,9 +19,12 @@ export const Home = () => {
       <section className="pt-[40px] xl:pt-[64px] ">
         <ProductSection title={"TOP SELLING"} />
       </section>
-      {/* <section>
+      <section>
         <Browse />
-      </section> */}
+      </section>
+      <section className="pt-[50px] xl:pt-[80px] pb-[100px]">
+        <Customers />
+      </section>
     </>
   );
 };

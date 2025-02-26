@@ -14,8 +14,8 @@ export const SliderCard = () => {
       loop={true}
       breakpoints={{
         320: { slidesPerView: 2 },
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        640: { slidesPerView: 3, spaceBetween: 16 },
+        1024: { slidesPerView: 4, spaceBetween: 16 },
         1280: { slidesPerView: 4, spaceBetween: 16 },
       }}
       className="product__card--slider"

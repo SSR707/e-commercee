@@ -1,14 +1,13 @@
 import heroImg from "../../../assets/heroImg.png";
 import heroStar1 from "../../../assets/heroStar1.svg";
 import heroStar2 from "../../../assets/heroStar2.svg";
-
 export const Hero = () => {
   return (
     <>
       <div className="container">
         <div className=" flex xl:relative xl:items-center">
           <div className="w-full xl:max-w-[50%]">
-            <h1 className=" max-w-[315px] font-bold text-[36px] leading-[94%] text-[#000] mb-[20px] xl:text-[64px] xl:max-w-[577px] ">
+            <h1 className="secondFont max-w-[315px] font-bold text-[36px] leading-[94%] text-[#000] mb-[20px] xl:text-[64px] xl:max-w-[577px] ">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
             <p className=" text-gray font-normal text-[14px] text-[ rgba(0, 0, 0, 0.6);] leading-[143%] xl:w-[500px] xl:text-[16px] ">
