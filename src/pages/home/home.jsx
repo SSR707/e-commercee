@@ -22,7 +22,7 @@ export const Home = () => {
       <section>
         <Browse />
       </section>
-      <section className="pt-[50px] xl:pt-[80px] pb-[100px]">
+      <section className="pt-[50px] xl:pt-[80px] pb-[195px] xl:pb-[170px]">
         <Customers />
       </section>
     </>

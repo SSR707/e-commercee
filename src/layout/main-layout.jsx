@@ -11,7 +11,7 @@ export const MainLayout = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
-      <footer>
+      <footer >
         <Footer />
       </footer>
     </div>
