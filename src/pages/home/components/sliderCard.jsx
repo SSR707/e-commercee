@@ -5,6 +5,7 @@ import "swiper/css/scrollbar";
 
 import { ProductData } from "../data/data";
 import { ProductCard } from "./product-card";
+import { Link } from "react-router-dom";
 
 export const SliderCard = () => {
   return (
@@ -22,12 +23,14 @@ export const SliderCard = () => {
     >
       {ProductData.map((item) => (
         <SwiperSlide key={item.id}>
-          <ProductCard
-            img={item.img}
-            name={item.name}
-            price={item.price}
-            otziv={item.otziv}
-          />
+          <Link to={`/product/${item.id}`}>
+            <ProductCard
+              img={item.img}
+              name={item.name}
+              price={item.price}
+              otziv={item.otziv}
+            />
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>

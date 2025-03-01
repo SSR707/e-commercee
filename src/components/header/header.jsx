@@ -6,7 +6,7 @@ import ProfileIcon from "../../assets/profileIcon.svg";
 
 export const Header = () => {
   return (
-    <>
+    <div className="border-b-1 border-silver-gray">
       <div className=" bg-primary py-[9px] text-center">
         <p className=" font-normal text-[12px] text-[#fff]">
           Sign up and get 20% off to your first order.{" "}
@@ -54,6 +54,6 @@ export const Header = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
