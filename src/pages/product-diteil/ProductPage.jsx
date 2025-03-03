@@ -7,20 +7,20 @@ import { ProductData } from "../home/data/data";
 
 export const ProductPage = () => {
   const { id } = useParams();
-  const [product, setProduct] = useState(null); 
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     window.scrollTo({ top: 50 });
     const foundProduct = ProductData.find((item) => item.id === +id);
 
-    setProduct(foundProduct || null); 
+    setProduct(foundProduct || null);
   }, [id]);
   return (
     <>
       <ProductDitail data={product} />
       <ProductNavbar />
       <div>
-        <Outlet />
+        <Outlet context={{ product }} />
       </div>
       <div className="pb-[150px]">
         <ProductSection title={"YOU MIGHT ALSO LIKE"} />
